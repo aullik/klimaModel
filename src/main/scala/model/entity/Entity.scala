@@ -1,0 +1,16 @@
+package model.entity
+
+/**
+  * An Entity inside of the Database.
+  * <p>
+  * Every class extending Entity will be saved in the Database and can be loaded via [[model.entity.Entity#id]]
+  *
+  */
+trait Entity[ID <: EntityId] extends Product {
+
+  val id: ID
+
+}
+
+object Entity {
+}
